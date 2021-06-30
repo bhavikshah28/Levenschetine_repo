@@ -1,0 +1,25 @@
+<form [formGroup]="myForm" (ngSubmit)="submitForm()">
+    <mat-form-field class="example-full-width" appearance="standard">
+        <input matInput placeholder="First Input" formControlName="firstInput">
+        <mat-error *ngIf="errorHandling('firstInput', 'required')">
+            You must provide an <strong>Input</strong>
+        </mat-error>
+        <mat-error *ngIf="errorHandling('firstInput', 'maxlength')">
+            you must not exceed max length of <strong>50</strong> characters
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="standard">
+        <input matInput placeholder="Second Input" formControlName="secondInput">
+        <mat-error *ngIf="errorHandling('secondInput', 'required')">
+            You must provide an <strong>Input</strong>
+        </mat-error>
+        <mat-error *ngIf="errorHandling('firstInput', 'maxlength')">
+            you must not exceed max length of <strong>50</strong> characters
+        </mat-error>
+    </mat-form-field>
+    <div class="button-wrapper">
+        <button mat-flat-button color="primary" [disabled]="!myForm.valid">
+            <span [matTooltip]="!myForm.valid ? 'Type valid input in text boxes' : 'Submit'">Submit</span>
+        </button>
+    </div>
+</form>

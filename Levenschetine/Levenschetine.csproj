@@ -1,0 +1,409 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+    <SpaRoot>ClientApp\</SpaRoot>
+    <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+
+    <!-- Set this to true if you enable server-side prerendering -->
+    <BuildServerSideRenderer>false</BuildServerSideRenderer>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="ClientApp - Copy\**" />
+    <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp - Copy\**" />
+    <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ClientApp - Copy\**" />
+    <None Remove="ClientApp - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net461\appsettings.Development.json" />
+    <Content Include="bin\Debug\net461\appsettings.json" />
+    <Content Include="bin\Debug\net461\Levenschetine.deps.json" />
+    <Content Include="bin\Debug\net461\Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net461\app.config" />
+    <None Include="bin\Debug\net461\Levenschetine.exe" />
+    <None Include="bin\Debug\net461\Levenschetine.exe.config" />
+    <None Include="bin\Debug\net461\Levenschetine.pdb" />
+    <None Include="bin\Debug\net461\Levenschetine.Views.dll" />
+    <None Include="bin\Debug\net461\Levenschetine.Views.pdb" />
+    <None Include="bin\Debug\net461\Matrix.Data.DataAccess.dll" />
+    <None Include="bin\Debug\net461\Matrix.Data.DataAccess.Interface.dll" />
+    <None Include="bin\Debug\net461\Matrix.Data.DataAccess.Interface.pdb" />
+    <None Include="bin\Debug\net461\Matrix.Data.DataAccess.pdb" />
+    <None Include="bin\Debug\net461\Matrix.Data.Model.dll" />
+    <None Include="bin\Debug\net461\Matrix.Data.Model.pdb" />
+    <None Include="bin\Debug\net461\Matrx.Data.Common.dll" />
+    <None Include="bin\Debug\net461\Matrx.Data.Common.dll.config" />
+    <None Include="bin\Debug\net461\Matrx.Data.Common.pdb" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Antiforgery.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Authentication.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Authentication.Core.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Authorization.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Authorization.Policy.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Connections.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Cors.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Cryptography.Internal.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.DataProtection.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.DataProtection.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Diagnostics.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Diagnostics.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.HostFiltering.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Hosting.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Hosting.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Html.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Http.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Http.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Http.Extensions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Http.Features.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.HttpOverrides.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.HttpsPolicy.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.JsonPatch.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Localization.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.ApiExplorer.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.Core.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.Cors.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.DataAnnotations.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.Formatters.Json.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.Localization.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.Razor.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.RazorPages.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.TagHelpers.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Mvc.ViewFeatures.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.NodeServices.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Razor.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Razor.Language.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Razor.Runtime.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Routing.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Routing.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Server.IISIntegration.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Server.Kestrel.Core.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Server.Kestrel.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Server.Kestrel.Https.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.SpaServices.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.SpaServices.Extensions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.StaticFiles.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.WebSockets.dll" />
+    <None Include="bin\Debug\net461\Microsoft.AspNetCore.WebUtilities.dll" />
+    <None Include="bin\Debug\net461\Microsoft.CodeAnalysis.CSharp.dll" />
+    <None Include="bin\Debug\net461\Microsoft.CodeAnalysis.dll" />
+    <None Include="bin\Debug\net461\Microsoft.CodeAnalysis.Razor.dll" />
+    <None Include="bin\Debug\net461\Microsoft.DiaSymReader.Native.x86.dll" />
+    <None Include="bin\Debug\net461\Microsoft.DotNet.PlatformAbstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Caching.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Caching.Memory.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Configuration.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Configuration.Binder.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Configuration.CommandLine.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Configuration.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Configuration.FileExtensions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Configuration.Json.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Configuration.UserSecrets.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.DependencyInjection.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.DependencyModel.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.FileProviders.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.FileProviders.Composite.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.FileProviders.Physical.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.FileSystemGlobbing.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Hosting.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Localization.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Localization.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Logging.Abstractions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Logging.Configuration.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Logging.Console.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Logging.Debug.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Logging.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.ObjectPool.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Options.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.Primitives.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Extensions.WebEncoders.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Net.Http.Headers.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Win32.Primitives.dll" />
+    <None Include="bin\Debug\net461\Microsoft.Win32.Registry.dll" />
+    <None Include="bin\Debug\net461\netstandard.dll" />
+    <None Include="bin\Debug\net461\Newtonsoft.Json.Bson.dll" />
+    <None Include="bin\Debug\net461\Newtonsoft.Json.dll" />
+    <None Include="bin\Debug\net461\refs\Microsoft.Win32.Primitives.dll" />
+    <None Include="bin\Debug\net461\refs\netfx.force.conflicts.dll" />
+    <None Include="bin\Debug\net461\refs\netstandard.dll" />
+    <None Include="bin\Debug\net461\refs\System.AppContext.dll" />
+    <None Include="bin\Debug\net461\refs\System.Collections.Concurrent.dll" />
+    <None Include="bin\Debug\net461\refs\System.Collections.dll" />
+    <None Include="bin\Debug\net461\refs\System.Collections.NonGeneric.dll" />
+    <None Include="bin\Debug\net461\refs\System.Collections.Specialized.dll" />
+    <None Include="bin\Debug\net461\refs\System.ComponentModel.dll" />
+    <None Include="bin\Debug\net461\refs\System.ComponentModel.EventBasedAsync.dll" />
+    <None Include="bin\Debug\net461\refs\System.ComponentModel.Primitives.dll" />
+    <None Include="bin\Debug\net461\refs\System.ComponentModel.TypeConverter.dll" />
+    <None Include="bin\Debug\net461\refs\System.Console.dll" />
+    <None Include="bin\Debug\net461\refs\System.Data.Common.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.Contracts.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.Debug.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.FileVersionInfo.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.Process.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.StackTrace.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.TextWriterTraceListener.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.Tools.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.TraceSource.dll" />
+    <None Include="bin\Debug\net461\refs\System.Diagnostics.Tracing.dll" />
+    <None Include="bin\Debug\net461\refs\System.Drawing.Primitives.dll" />
+    <None Include="bin\Debug\net461\refs\System.Dynamic.Runtime.dll" />
+    <None Include="bin\Debug\net461\refs\System.Globalization.Calendars.dll" />
+    <None Include="bin\Debug\net461\refs\System.Globalization.dll" />
+    <None Include="bin\Debug\net461\refs\System.Globalization.Extensions.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.Compression.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.Compression.ZipFile.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.FileSystem.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.FileSystem.DriveInfo.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.FileSystem.Primitives.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.FileSystem.Watcher.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.IsolatedStorage.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.MemoryMappedFiles.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.Pipes.dll" />
+    <None Include="bin\Debug\net461\refs\System.IO.UnmanagedMemoryStream.dll" />
+    <None Include="bin\Debug\net461\refs\System.Linq.dll" />
+    <None Include="bin\Debug\net461\refs\System.Linq.Expressions.dll" />
+    <None Include="bin\Debug\net461\refs\System.Linq.Parallel.dll" />
+    <None Include="bin\Debug\net461\refs\System.Linq.Queryable.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.Http.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.NameResolution.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.NetworkInformation.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.Ping.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.Primitives.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.Requests.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.Security.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.Sockets.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.WebHeaderCollection.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.WebSockets.Client.dll" />
+    <None Include="bin\Debug\net461\refs\System.Net.WebSockets.dll" />
+    <None Include="bin\Debug\net461\refs\System.ObjectModel.dll" />
+    <None Include="bin\Debug\net461\refs\System.Reflection.dll" />
+    <None Include="bin\Debug\net461\refs\System.Reflection.Extensions.dll" />
+    <None Include="bin\Debug\net461\refs\System.Reflection.Primitives.dll" />
+    <None Include="bin\Debug\net461\refs\System.Resources.Reader.dll" />
+    <None Include="bin\Debug\net461\refs\System.Resources.ResourceManager.dll" />
+    <None Include="bin\Debug\net461\refs\System.Resources.Writer.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.CompilerServices.VisualC.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.Extensions.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.Handles.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.InteropServices.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.Numerics.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.Serialization.Formatters.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.Serialization.Json.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.Serialization.Primitives.dll" />
+    <None Include="bin\Debug\net461\refs\System.Runtime.Serialization.Xml.dll" />
+    <None Include="bin\Debug\net461\refs\System.Security.Claims.dll" />
+    <None Include="bin\Debug\net461\refs\System.Security.Cryptography.Algorithms.dll" />
+    <None Include="bin\Debug\net461\refs\System.Security.Cryptography.Csp.dll" />
+    <None Include="bin\Debug\net461\refs\System.Security.Cryptography.Encoding.dll" />
+    <None Include="bin\Debug\net461\refs\System.Security.Cryptography.Primitives.dll" />
+    <None Include="bin\Debug\net461\refs\System.Security.Cryptography.X509Certificates.dll" />
+    <None Include="bin\Debug\net461\refs\System.Security.Principal.dll" />
+    <None Include="bin\Debug\net461\refs\System.Security.SecureString.dll" />
+    <None Include="bin\Debug\net461\refs\System.Text.Encoding.dll" />
+    <None Include="bin\Debug\net461\refs\System.Text.Encoding.Extensions.dll" />
+    <None Include="bin\Debug\net461\refs\System.Text.RegularExpressions.dll" />
+    <None Include="bin\Debug\net461\refs\System.Threading.dll" />
+    <None Include="bin\Debug\net461\refs\System.Threading.Overlapped.dll" />
+    <None Include="bin\Debug\net461\refs\System.Threading.Tasks.dll" />
+    <None Include="bin\Debug\net461\refs\System.Threading.Tasks.Parallel.dll" />
+    <None Include="bin\Debug\net461\refs\System.Threading.Thread.dll" />
+    <None Include="bin\Debug\net461\refs\System.Threading.ThreadPool.dll" />
+    <None Include="bin\Debug\net461\refs\System.Threading.Timer.dll" />
+    <None Include="bin\Debug\net461\refs\System.ValueTuple.dll" />
+    <None Include="bin\Debug\net461\refs\System.Xml.ReaderWriter.dll" />
+    <None Include="bin\Debug\net461\refs\System.Xml.XDocument.dll" />
+    <None Include="bin\Debug\net461\refs\System.Xml.XmlDocument.dll" />
+    <None Include="bin\Debug\net461\refs\System.Xml.XmlSerializer.dll" />
+    <None Include="bin\Debug\net461\refs\System.Xml.XPath.dll" />
+    <None Include="bin\Debug\net461\refs\System.Xml.XPath.XDocument.dll" />
+    <None Include="bin\Debug\net461\System.AppContext.dll" />
+    <None Include="bin\Debug\net461\System.Buffers.dll" />
+    <None Include="bin\Debug\net461\System.Collections.Concurrent.dll" />
+    <None Include="bin\Debug\net461\System.Collections.dll" />
+    <None Include="bin\Debug\net461\System.Collections.Immutable.dll" />
+    <None Include="bin\Debug\net461\System.Collections.NonGeneric.dll" />
+    <None Include="bin\Debug\net461\System.Collections.Specialized.dll" />
+    <None Include="bin\Debug\net461\System.ComponentModel.Annotations.dll" />
+    <None Include="bin\Debug\net461\System.ComponentModel.dll" />
+    <None Include="bin\Debug\net461\System.ComponentModel.EventBasedAsync.dll" />
+    <None Include="bin\Debug\net461\System.ComponentModel.Primitives.dll" />
+    <None Include="bin\Debug\net461\System.ComponentModel.TypeConverter.dll" />
+    <None Include="bin\Debug\net461\System.Console.dll" />
+    <None Include="bin\Debug\net461\System.Data.Common.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.Contracts.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.Debug.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.DiagnosticSource.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.FileVersionInfo.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.Process.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.StackTrace.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.TextWriterTraceListener.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.Tools.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.TraceSource.dll" />
+    <None Include="bin\Debug\net461\System.Diagnostics.Tracing.dll" />
+    <None Include="bin\Debug\net461\System.Drawing.Primitives.dll" />
+    <None Include="bin\Debug\net461\System.Dynamic.Runtime.dll" />
+    <None Include="bin\Debug\net461\System.Globalization.Calendars.dll" />
+    <None Include="bin\Debug\net461\System.Globalization.dll" />
+    <None Include="bin\Debug\net461\System.Globalization.Extensions.dll" />
+    <None Include="bin\Debug\net461\System.IO.Compression.dll" />
+    <None Include="bin\Debug\net461\System.IO.Compression.ZipFile.dll" />
+    <None Include="bin\Debug\net461\System.IO.dll" />
+    <None Include="bin\Debug\net461\System.IO.FileSystem.dll" />
+    <None Include="bin\Debug\net461\System.IO.FileSystem.DriveInfo.dll" />
+    <None Include="bin\Debug\net461\System.IO.FileSystem.Primitives.dll" />
+    <None Include="bin\Debug\net461\System.IO.FileSystem.Watcher.dll" />
+    <None Include="bin\Debug\net461\System.IO.IsolatedStorage.dll" />
+    <None Include="bin\Debug\net461\System.IO.MemoryMappedFiles.dll" />
+    <None Include="bin\Debug\net461\System.IO.Pipelines.dll" />
+    <None Include="bin\Debug\net461\System.IO.Pipes.dll" />
+    <None Include="bin\Debug\net461\System.IO.UnmanagedMemoryStream.dll" />
+    <None Include="bin\Debug\net461\System.Linq.dll" />
+    <None Include="bin\Debug\net461\System.Linq.Expressions.dll" />
+    <None Include="bin\Debug\net461\System.Linq.Parallel.dll" />
+    <None Include="bin\Debug\net461\System.Linq.Queryable.dll" />
+    <None Include="bin\Debug\net461\System.Memory.dll" />
+    <None Include="bin\Debug\net461\System.Net.Http.dll" />
+    <None Include="bin\Debug\net461\System.Net.NameResolution.dll" />
+    <None Include="bin\Debug\net461\System.Net.NetworkInformation.dll" />
+    <None Include="bin\Debug\net461\System.Net.Ping.dll" />
+    <None Include="bin\Debug\net461\System.Net.Primitives.dll" />
+    <None Include="bin\Debug\net461\System.Net.Requests.dll" />
+    <None Include="bin\Debug\net461\System.Net.Security.dll" />
+    <None Include="bin\Debug\net461\System.Net.Sockets.dll" />
+    <None Include="bin\Debug\net461\System.Net.WebHeaderCollection.dll" />
+    <None Include="bin\Debug\net461\System.Net.WebSockets.Client.dll" />
+    <None Include="bin\Debug\net461\System.Net.WebSockets.dll" />
+    <None Include="bin\Debug\net461\System.Net.WebSockets.WebSocketProtocol.dll" />
+    <None Include="bin\Debug\net461\System.Numerics.Vectors.dll" />
+    <None Include="bin\Debug\net461\System.ObjectModel.dll" />
+    <None Include="bin\Debug\net461\System.Reflection.dll" />
+    <None Include="bin\Debug\net461\System.Reflection.Extensions.dll" />
+    <None Include="bin\Debug\net461\System.Reflection.Metadata.dll" />
+    <None Include="bin\Debug\net461\System.Reflection.Primitives.dll" />
+    <None Include="bin\Debug\net461\System.Resources.Reader.dll" />
+    <None Include="bin\Debug\net461\System.Resources.ResourceManager.dll" />
+    <None Include="bin\Debug\net461\System.Resources.Writer.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.CompilerServices.VisualC.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.Extensions.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.Handles.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.InteropServices.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.InteropServices.RuntimeInformation.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.Numerics.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.Serialization.Formatters.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.Serialization.Json.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.Serialization.Primitives.dll" />
+    <None Include="bin\Debug\net461\System.Runtime.Serialization.Xml.dll" />
+    <None Include="bin\Debug\net461\System.Security.AccessControl.dll" />
+    <None Include="bin\Debug\net461\System.Security.Claims.dll" />
+    <None Include="bin\Debug\net461\System.Security.Cryptography.Algorithms.dll" />
+    <None Include="bin\Debug\net461\System.Security.Cryptography.Cng.dll" />
+    <None Include="bin\Debug\net461\System.Security.Cryptography.Csp.dll" />
+    <None Include="bin\Debug\net461\System.Security.Cryptography.Encoding.dll" />
+    <None Include="bin\Debug\net461\System.Security.Cryptography.Primitives.dll" />
+    <None Include="bin\Debug\net461\System.Security.Cryptography.X509Certificates.dll" />
+    <None Include="bin\Debug\net461\System.Security.Cryptography.Xml.dll" />
+    <None Include="bin\Debug\net461\System.Security.Permissions.dll" />
+    <None Include="bin\Debug\net461\System.Security.Principal.dll" />
+    <None Include="bin\Debug\net461\System.Security.Principal.Windows.dll" />
+    <None Include="bin\Debug\net461\System.Security.SecureString.dll" />
+    <None Include="bin\Debug\net461\System.Text.Encoding.CodePages.dll" />
+    <None Include="bin\Debug\net461\System.Text.Encoding.dll" />
+    <None Include="bin\Debug\net461\System.Text.Encoding.Extensions.dll" />
+    <None Include="bin\Debug\net461\System.Text.Encodings.Web.dll" />
+    <None Include="bin\Debug\net461\System.Text.RegularExpressions.dll" />
+    <None Include="bin\Debug\net461\System.Threading.dll" />
+    <None Include="bin\Debug\net461\System.Threading.Overlapped.dll" />
+    <None Include="bin\Debug\net461\System.Threading.Tasks.dll" />
+    <None Include="bin\Debug\net461\System.Threading.Tasks.Extensions.dll" />
+    <None Include="bin\Debug\net461\System.Threading.Tasks.Parallel.dll" />
+    <None Include="bin\Debug\net461\System.Threading.Thread.dll" />
+    <None Include="bin\Debug\net461\System.Threading.ThreadPool.dll" />
+    <None Include="bin\Debug\net461\System.Threading.Timer.dll" />
+    <None Include="bin\Debug\net461\System.ValueTuple.dll" />
+    <None Include="bin\Debug\net461\System.Xml.ReaderWriter.dll" />
+    <None Include="bin\Debug\net461\System.Xml.XDocument.dll" />
+    <None Include="bin\Debug\net461\System.Xml.XmlDocument.dll" />
+    <None Include="bin\Debug\net461\System.Xml.XmlSerializer.dll" />
+    <None Include="bin\Debug\net461\System.Xml.XPath.dll" />
+    <None Include="bin\Debug\net461\System.Xml.XPath.XDocument.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Matrix.Data.DataAccess.Interface\Matrix.Data.DataAccess.Interface.csproj" />
+    <ProjectReference Include="..\Matrix.Data.DataAccess\Matrix.Data.DataAccess.csproj" />
+    <ProjectReference Include="..\Matrix.Data.Model\Matrix.Data.Model.csproj" />
+    <ProjectReference Include="..\Matrx.Data.Common\Matrx.Data.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net461\ClientApp - Copy\e2e\" />
+    <Folder Include="bin\Debug\net461\ClientApp - Copy\src\" />
+  </ItemGroup>
+
+  <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+    <Message Importance="high" Text="Restoring dependencies using 'npm'. This may take several minutes..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build -- --prod" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build:ssr -- --prod" Condition=" '$(BuildServerSideRenderer)' == 'true' " />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="$(SpaRoot)dist\**; $(SpaRoot)dist-server\**" />
+      <DistFiles Include="$(SpaRoot)node_modules\**" Condition="'$(BuildServerSideRenderer)' == 'true'" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

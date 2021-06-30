@@ -1,0 +1,8 @@
+<!-- <button mat-button [matMenuTriggerFor]="beforeMenu">Menu</button> -->
+<button mat-mini-fab [matMenuTriggerFor]="beforeMenu" color="#beforeMenu" aria-label="Example icon button with a menu icon" matTooltip="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item routerLink="/home" routerLinkActive="active">Home</button>
+  <button mat-menu-item routerLink="/about" routerLinkActive="active">About</button>
+</mat-menu>

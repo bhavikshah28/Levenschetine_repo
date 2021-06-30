@@ -1,0 +1,8 @@
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.DataAccess.Interface\bin\Debug\Matrix.Data.DataAccess.Interface.dll
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.DataAccess.Interface\bin\Debug\Matrix.Data.DataAccess.Interface.pdb
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.DataAccess.Interface\bin\Debug\Matrix.Data.Model.dll
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.DataAccess.Interface\bin\Debug\Matrix.Data.Model.pdb
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.DataAccess.Interface\obj\Debug\Matrix.Data.DataAccess.Interface.csprojAssemblyReference.cache
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.DataAccess.Interface\obj\Debug\Matrix.Data.DataAccess.Interface.csproj.CopyComplete
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.DataAccess.Interface\obj\Debug\Matrix.Data.DataAccess.Interface.dll
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.DataAccess.Interface\obj\Debug\Matrix.Data.DataAccess.Interface.pdb

@@ -1,0 +1,5 @@
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.Model\bin\Debug\Matrix.Data.Model.dll
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.Model\bin\Debug\Matrix.Data.Model.pdb
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.Model\obj\Debug\Matrix.Data.Model.csprojAssemblyReference.cache
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.Model\obj\Debug\Matrix.Data.Model.dll
+C:\Users\bhavikshah\source\repos\Levenschetine\Matrix.Data.Model\obj\Debug\Matrix.Data.Model.pdb

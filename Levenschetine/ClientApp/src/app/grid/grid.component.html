@@ -1,0 +1,16 @@
+<div class="distance">
+  {{distance}}
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+<table class="minimalistBlack">
+  <tbody>
+    <tr *ngFor="let row of matrix">
+      <td  *ngFor="let val of splitString(row)" style="width: 16.6667%;">{{val}}</td>
+    </tr>
+  </tbody>
+  </table>
