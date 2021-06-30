@@ -37,3 +37,5 @@ in Ui , both input is validated on front side as well as backend side.
 2) Buid the Solution and run Angular project by ging clientapp project in cmd and run ng serve , so ANgular project will be run on 4200 port.
 3) F5 the application, .Net core project would be run on browser with finding levenschentine distance and matrix.
 
+![levenscheitine](https://user-images.githubusercontent.com/52338464/124021887-b9b2dd80-da09-11eb-928c-3fcf411adc93.png)
+
