@@ -28,6 +28,7 @@ Api would be accessbile by https://localhost:44370/ using below inputs:
   "FirstInput" : "Honda",
   "SecondInput": "Hyundai"
 }
+**SecretKey:** 0X67YT-FG4578-HJ3421-AD5643
 
 in Ui , both input is validated on front side as well as backend side.
 
